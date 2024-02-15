@@ -22,10 +22,12 @@ public class GravityController : MonoBehaviour
             Physics.gravity = new Vector3(0, 0, 9.81f);
     }
 
+    // DELETE
     private void OnCollisionEnter(Collision other) {
         if(other.gameObject.name == "Door")
             ChangeGravity(GravityDir.xP, other.transform);
-    }
+    } 
+    // DELETE
 
     public void ChangeGravity(GravityDir gravityDir, Transform ralativeTransform){
         switch(gravityDir){
