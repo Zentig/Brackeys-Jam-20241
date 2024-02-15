@@ -5,17 +5,16 @@ using UnityEngine;
 
 public class SuperButton : MonoBehaviour
 {
-    public Collider button;
+    public Collider Button;
+    public Transform ButtonCheck;
 
-    private void OnCollisionEnter(Collision other) {
-        if(other.collider == button){
-            Activate();
-        }
-    }
-
-    private void OnCollisionExit(Collision other) {
-        if (other.collider == button){
-            Deactivate();
+    private void Update() {
+        Collider[] hit = Physics.OverlapSphere(ButtonCheck.position, 0.1f);
+        foreach (var hitCollider in hit)
+        {
+            if (hitCollider == Button){
+                Activate();
+            }
         }
     }
 
