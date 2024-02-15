@@ -237,11 +237,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 208748274}
+  - component: {fileID: 208748275}
   - component: {fileID: 208748273}
   - component: {fileID: 208748272}
   - component: {fileID: 208748271}
   - component: {fileID: 208748270}
-  - component: {fileID: 208748275}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -356,8 +356,8 @@ Transform:
   m_GameObject: {fileID: 208748269}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2105932, y: 2.77, z: 11.97}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.2105932, y: 3.27, z: 11.97}
+  m_LocalScale: {x: 0.4304, y: 1.9893814, z: 0.4304}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -641,7 +641,6 @@ GameObject:
   - component: {fileID: 690321672}
   - component: {fileID: 690321671}
   - component: {fileID: 690321670}
-  - component: {fileID: 690321674}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -728,40 +727,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690321669}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 8.02075, y: 5.9760485, z: 13.236689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.02075, y: 2.512, z: 13.236689}
   m_LocalScale: {x: 1.9138288, y: 4.0836287, z: 0.11426424}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!54 &690321674
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 690321669}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &787193940
 GameObject:
   m_ObjectHideFlags: 0
