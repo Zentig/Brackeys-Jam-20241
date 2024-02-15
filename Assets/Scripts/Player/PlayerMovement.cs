@@ -38,8 +38,8 @@ namespace Player
 
             _jumpDebounceTimer = _jumpDebounceTime;
             _speed = _moveSpeed;
-            Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            //Cursor.lockState = CursorLockMode.Locked;
+            //Cursor.visible = false;
         }
 
         public void Update()
