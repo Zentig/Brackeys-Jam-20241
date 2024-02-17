@@ -8,6 +8,8 @@ public class SuperButton : MonoBehaviour
     public Collider Button;
     public Transform ButtonCheck;
 
+    public EventHandler<bool> buttonPressed;
+
     private void Update() {
         Collider[] hit = Physics.OverlapSphere(ButtonCheck.position, 0.1f);
         foreach (var hitCollider in hit)
@@ -20,10 +22,10 @@ public class SuperButton : MonoBehaviour
 
     private void Deactivate()
     {
-        print("!SS");
+        buttonPressed?.Invoke(this, false);
     }
 
     public void Activate(){
-        print("SS");
+        buttonPressed?.Invoke(this, true);
     }
 }

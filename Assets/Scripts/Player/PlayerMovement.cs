@@ -76,13 +76,10 @@ namespace Player
 
         private void FixedUpdate()
         {
-            if(Input.GetKey(KeyCode.W))
-                print("SS");
             Vector3 moveDir = _orientation.forward * _verticalInput + _orientation.right * _horizontalInput;
             if (moveDir != Vector3.zero)
             {
                 OnPlayerWalk?.Invoke(this, EventArgs.Empty);
-                print("SS");
             }
             else
             {

@@ -938,6 +938,67 @@ MonoBehaviour:
   _player: {fileID: 2062982715}
   _playerObj: {fileID: 1350586269}
   _rotationSpeed: 1
+--- !u!1001 &1019620043
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.282423
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6108142
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.068405
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3a3ff4f04461a9a42ba60a592bd276a7, type: 2}
+    - target: {fileID: 919132149155446097, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
+      propertyPath: m_Name
+      value: Cube
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f474e3e013459fd4dad38cc55d8d8cf6, type: 3}
 --- !u!1 &1310935557
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,7 +1414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1573652941}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.20088413, y: 0.30839208, z: -0.06680055, w: 0.9274037}
+  m_LocalRotation: {x: 0.20088415, y: 0.30839214, z: -0.066800565, w: 0.9274037}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1974,7 +2035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2067109884}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.13593233, y: 0.31228957, z: -0.045201946, w: 0.9391243}
+  m_LocalRotation: {x: 0.13593231, y: 0.31228957, z: -0.045201942, w: 0.9391243}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2034,6 +2095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 'Door '
       objectReference: {fileID: 0}
+    - target: {fileID: 6814261728034660197, guid: 1818d210ebb9b4e13bb7c4a961be5c5b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8571688849315142745, guid: 1818d210ebb9b4e13bb7c4a961be5c5b, type: 3}
       propertyPath: _cinemachineBrain
       value: 
@@ -2059,3 +2124,4 @@ SceneRoots:
   - {fileID: 2062982715}
   - {fileID: 6783556257697105552}
   - {fileID: 2033251865}
+  - {fileID: 1019620043}
