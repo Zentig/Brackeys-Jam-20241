@@ -193,7 +193,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000048956753, y: -0.00000011920929, z: -2.0103407}
+  m_ConnectedAnchor: {x: -0.000000044585615, y: -0.00000011920929, z: -1.830846}
   serializedVersion: 2
   m_Spring: 400
   m_Damper: 0
