@@ -5,26 +5,27 @@ using UnityEngine;
 
 public class SuperButton : MonoBehaviour
 {
-    public Collider button;
+    public Collider Button;
+    public Transform ButtonCheck;
 
-    private void OnCollisionEnter(Collision other) {
-        if(other.collider == button){
-            Activate();
-        }
-    }
+    public EventHandler<bool> buttonPressed;
 
-    private void OnCollisionExit(Collision other) {
-        if (other.collider == button){
-            Deactivate();
+    private void Update() {
+        Collider[] hit = Physics.OverlapSphere(ButtonCheck.position, 0.1f);
+        foreach (var hitCollider in hit)
+        {
+            if (hitCollider == Button){
+                Activate();
+            }
         }
     }
 
     private void Deactivate()
     {
-        print("!SS");
+        buttonPressed?.Invoke(this, false);
     }
 
     public void Activate(){
-        print("SS");
+        buttonPressed?.Invoke(this, true);
     }
 }

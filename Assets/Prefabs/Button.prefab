@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2703742442524176274}
+  - component: {fileID: 6847253902610802013}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -25,14 +26,29 @@ Transform:
   m_GameObject: {fileID: 372398028939482803}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.9659104, y: 0.8399997, z: 13.052668}
+  m_LocalPosition: {x: -3.9659104, y: 0.78, z: 13.052668}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5296723050127719248}
   - {fileID: 3833559182887114115}
+  - {fileID: 7697770149911333386}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6847253902610802013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372398028939482803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b532bfeed84ad80499ff5b44057a9131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Button: {fileID: 1821864532888086984}
+  ButtonCheck: {fileID: 7697770149911333386}
 --- !u!1 &2968928640829998443
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +58,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3833559182887114115}
-  - component: {fileID: 7531208860779807871}
   - component: {fileID: 4498622414857750395}
   - component: {fileID: 4710798265015835634}
   - component: {fileID: 7377788695256119058}
@@ -70,19 +85,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2703742442524176274}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7531208860779807871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2968928640829998443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b532bfeed84ad80499ff5b44057a9131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  button: {fileID: 1821864532888086984}
 --- !u!33 &4498622414857750395
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -193,7 +195,7 @@ SpringJoint:
   m_ConnectedArticulationBody: {fileID: 0}
   m_Anchor: {x: 0, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.000000048956753, y: -0.00000011920929, z: -2.0103407}
+  m_ConnectedAnchor: {x: -0.000000044585615, y: -0.00000011920929, z: -1.830846}
   serializedVersion: 2
   m_Spring: 400
   m_Damper: 0
@@ -206,6 +208,37 @@ SpringJoint:
   m_EnablePreprocessing: 1
   m_MassScale: 1
   m_ConnectedMassScale: 1
+--- !u!1 &8501938142564628115
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7697770149911333386}
+  m_Layer: 0
+  m_Name: Button check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7697770149911333386
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8501938142564628115}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.009, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2703742442524176274}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8577870225368034329
 GameObject:
   m_ObjectHideFlags: 0
