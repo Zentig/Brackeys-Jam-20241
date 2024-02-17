@@ -1,8 +1,7 @@
 using System;
-using Cinemachine;
-using Reflex.Attributes;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace Player
 {
@@ -83,6 +82,8 @@ namespace Player
             {
                 _speed = _moveSpeed;
             }
+
+            AudioSource.
         }
 
         private void FixedUpdate()
@@ -228,6 +229,14 @@ namespace Player
         {
             _rb.isKinematic = state;
             _ableToMove = !state;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if(other.gameObject.CompareTag("Laser"))
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 }
