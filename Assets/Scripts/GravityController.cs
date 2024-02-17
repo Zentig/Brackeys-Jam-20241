@@ -29,7 +29,7 @@ public class GravityController : MonoBehaviour
     } 
     // DELETE
 
-    public void ChangeGravity(GravityDir gravityDir, Transform ralativeTransform){
+    public void ChangeGravity(GravityDir gravityDir, Transform relativeTransform){
         switch(gravityDir){
             case GravityDir.yM:
                 Physics.gravity = new Vector3(0, -9.81f, 0);
@@ -50,7 +50,7 @@ public class GravityController : MonoBehaviour
                 Physics.gravity = new Vector3(0, 0, 9.81f);
                 break;
         }
-        transform.rotation = ralativeTransform.rotation;
+        transform.rotation = relativeTransform.rotation;
     }
 }
 

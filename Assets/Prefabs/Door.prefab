@@ -292,5 +292,7 @@ MonoBehaviour:
   <NextDoor>k__BackingField: {fileID: 0}
   <CameraPivot>k__BackingField: {fileID: 2602569957647270947}
   <SpawnPlayerPos>k__BackingField: {fileID: 7499425388928931029}
+  <GravitySwap>k__BackingField: 0
   _teleportTime: 1.5
+  _changeDutchTime: 0.4
   _delayBeforeGetControl: 1200
