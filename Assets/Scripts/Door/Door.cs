@@ -10,7 +10,7 @@ using UnityEngine;
 
 public class Door : Interactable
 {
-    [SerializeField,Inject] private CinemachineBrain _cinemachineBrain;
+    [SerializeField] private CinemachineBrain _cinemachineBrain;
     [field:SerializeField] public Door NextDoor { get; private set; }
     [field:SerializeField] public Transform CameraPivot { get; private set; }
     [field:SerializeField] public Transform SpawnPlayerPos { get; private set; }

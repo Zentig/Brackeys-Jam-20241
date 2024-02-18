@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerInteract : MonoBehaviour
 {
-    [SerializeField,Inject] private Camera _mainCamera;
+    [SerializeField] private Camera _mainCamera;
     [SerializeField] private List<Interactable> _currentlyInteractedObjects;
     [SerializeField] private float _debounceTimer;
     private float _currentDebounceTime;
